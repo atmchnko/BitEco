@@ -28,12 +28,7 @@ export default function Index() {
             xmlns="http://www.w3.org/2000/svg"
           >
             <defs>
-              <radialGradient
-                id="gridGradient"
-                cx="50%"
-                cy="51%"
-                r="61.6%"
-              >
+              <radialGradient id="gridGradient" cx="50%" cy="51%" r="61.6%">
                 <stop offset="0%" stopColor="#CCDCFD" stopOpacity="0.17" />
                 <stop offset="100%" stopColor="#CCDCFD" stopOpacity="0" />
               </radialGradient>
@@ -77,22 +72,37 @@ export default function Index() {
               className="h-[46px] w-auto"
             />
           </Link>
-          
+
           <nav className="flex items-center gap-6 px-5 py-2 rounded-2xl border border-biteco-border-light bg-[rgba(18,19,23,0.50)] backdrop-blur-sm">
             <div className="flex items-center gap-6">
-              <a href="#about" className="text-base text-biteco-text hover:text-white transition-colors">
+              <a
+                href="#about"
+                className="text-base text-biteco-text hover:text-white transition-colors"
+              >
                 О нас
               </a>
-              <a href="#faq" className="text-base text-biteco-text hover:text-white transition-colors">
+              <a
+                href="#faq"
+                className="text-base text-biteco-text hover:text-white transition-colors"
+              >
                 FAQ
               </a>
-              <a href="#contacts" className="text-base text-biteco-text hover:text-white transition-colors">
+              <a
+                href="#contacts"
+                className="text-base text-biteco-text hover:text-white transition-colors"
+              >
                 Контакты
               </a>
             </div>
-            
+
             <button className="flex items-center gap-1.5 px-4 py-3 rounded-lg border border-biteco-border-light bg-biteco-card">
-              <div className="w-4 h-4 rounded-full bg-cover bg-center" style={{backgroundImage: "url('https://api.builder.io/api/v1/image/assets/TEMP/b700f324c8a32cc8f3219461cba6d2f67724b350?width=32')"}}></div>
+              <div
+                className="w-4 h-4 rounded-full bg-cover bg-center"
+                style={{
+                  backgroundImage:
+                    "url('https://api.builder.io/api/v1/image/assets/TEMP/b700f324c8a32cc8f3219461cba6d2f67724b350?width=32')",
+                }}
+              ></div>
               <span className="text-sm text-biteco-text">RU</span>
             </button>
           </nav>
@@ -105,7 +115,8 @@ export default function Index() {
           {/* Announcement Banner */}
           <div className="w-full p-5 rounded-2xl border border-biteco-border-light bg-[rgba(18,19,23,0.50)] backdrop-blur-sm">
             <p className="text-biteco-text text-center text-2xl sm:text-3xl font-medium leading-[135%]">
-              Чистка ведеться в ручном режиме. Обращайтесь по контактам. Минимальная сумма ручной чистки - 500 USDT
+              Чистка ведеться в ручном режиме. Обращайтесь по контактам.
+              Минимальная сумма ручной чистки - 500 USDT
             </p>
           </div>
 
@@ -114,7 +125,7 @@ export default function Index() {
             <h1 className="text-5xl sm:text-6xl lg:text-[70px] font-medium leading-[100%] text-biteco-text">
               Крипто Миксер
             </h1>
-            
+
             <div className="relative w-[100px] h-[100px] flex-shrink-0">
               <svg
                 width="110"
@@ -213,20 +224,24 @@ export default function Index() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="relative z-10 max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 mt-32">
+      <section
+        id="about"
+        className="relative z-10 max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 mt-32"
+      >
         <div className="flex flex-col items-center gap-8">
           {/* Section Header */}
           <div className="flex flex-col items-center gap-5 max-w-[534px]">
             <span className="inline-flex px-3.5 py-2.5 rounded-3xl border border-[rgba(255,255,255,0.16)] bg-gradient-to-r from-[rgba(41,42,44,0.56)] to-[rgba(85,87,91,0.77)] text-biteco-text text-base font-medium">
               О нас
             </span>
-            
+
             <div className="flex flex-col items-center gap-4 w-full">
               <h2 className="text-5xl sm:text-6xl lg:text-[70px] font-medium leading-[100%] text-biteco-text text-center">
                 Немного о нас
               </h2>
               <p className="text-biteco-text-muted text-base font-medium leading-[135%] text-center">
-                Мы используем самые современные технологии и методы для обеспечения максимальной безопасности и скорости наших услуг
+                Мы используем самые современные технологии и методы для
+                обеспечения максимальной безопасности и скорости наших услуг
               </p>
             </div>
           </div>
@@ -245,13 +260,15 @@ export default function Index() {
                   </span>
                 </div>
               </div>
-              
+
               <p className="text-base font-medium leading-[135%]">
                 <span className="text-biteco-text-muted">Работаем с</span>
                 <span className="text-biteco-text"> BTC, USDT, ETH, LTC </span>
-                <span className="text-biteco-text-muted">и тд. Пишите в support!</span>
+                <span className="text-biteco-text-muted">
+                  и тд. Пишите в support!
+                </span>
               </p>
-              
+
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/87bdfbf61a62e673df5acf13d48c8f58962d68d1?width=1180"
                 alt="Crypto coins"
@@ -266,13 +283,14 @@ export default function Index() {
                 alt="Chain break illustration"
                 className="absolute top-0 left-0 w-full h-auto object-contain"
               />
-              
+
               <div className="relative z-10">
                 <h3 className="text-3xl font-medium leading-[135%] text-biteco-text mb-4">
                   Обрыв цепочек
                 </h3>
                 <p className="text-biteco-text-muted text-base font-medium leading-[135%]">
-                  Полностью запутываем следы с нашей новой обновленной системой очистки. Вы получаете биржевые монеты с AML ~10%.
+                  Полностью запутываем следы с нашей новой обновленной системой
+                  очистки. Вы получаете биржевые монеты с AML ~10%.
                 </p>
               </div>
             </div>
@@ -281,14 +299,17 @@ export default function Index() {
       </section>
 
       {/* FAQ Section */}
-      <section id="faq" className="relative z-10 max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 mt-32">
+      <section
+        id="faq"
+        className="relative z-10 max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 mt-32"
+      >
         <div className="flex flex-col items-center gap-8">
           {/* Section Header */}
           <div className="flex flex-col items-center gap-5 max-w-[690px]">
             <span className="inline-flex px-3.5 py-2.5 rounded-3xl border border-[rgba(255,255,255,0.16)] bg-gradient-to-r from-[rgba(41,42,44,0.56)] to-[rgba(85,87,91,0.77)] text-biteco-text text-base font-medium">
               FAQ
             </span>
-            
+
             <h2 className="text-5xl sm:text-6xl lg:text-[70px] font-medium leading-[100%] text-biteco-text text-center">
               Остались вопросы?
             </h2>
@@ -305,7 +326,7 @@ export default function Index() {
                 <span className="text-2xl font-medium leading-[135%] text-biteco-text text-left flex-1">
                   {question}
                 </span>
-                
+
                 <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-biteco-button flex items-center justify-center">
                   <svg
                     width="16"
@@ -314,7 +335,10 @@ export default function Index() {
                     fill="none"
                     className="transition-transform duration-200"
                     style={{
-                      transform: openFaqIndex === index ? "rotate(45deg)" : "rotate(0deg)",
+                      transform:
+                        openFaqIndex === index
+                          ? "rotate(45deg)"
+                          : "rotate(0deg)",
                     }}
                   >
                     <path
@@ -330,14 +354,17 @@ export default function Index() {
       </section>
 
       {/* Contact Section */}
-      <section id="contacts" className="relative z-10 max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 mt-32 mb-32">
+      <section
+        id="contacts"
+        className="relative z-10 max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 mt-32 mb-32"
+      >
         <div className="flex flex-col items-center gap-8">
           {/* Section Header */}
           <div className="flex flex-col items-center gap-5 max-w-[534px]">
             <span className="inline-flex px-3.5 py-2.5 rounded-3xl border border-[rgba(255,255,255,0.16)] bg-gradient-to-r from-[rgba(41,42,44,0.56)] to-[rgba(85,87,91,0.77)] text-biteco-text text-base font-medium">
               Контакты
             </span>
-            
+
             <h2 className="text-5xl sm:text-6xl lg:text-[70px] font-medium leading-[100%] text-biteco-text text-center">
               Связь с нами
             </h2>
@@ -365,7 +392,7 @@ export default function Index() {
                     />
                   </svg>
                 </div>
-                
+
                 <div className="flex flex-col gap-2 flex-1">
                   <p className="text-biteco-text-muted text-xl font-medium leading-[135%]">
                     Telegram support
@@ -375,7 +402,7 @@ export default function Index() {
                   </p>
                 </div>
               </div>
-              
+
               <button className="flex items-center justify-center gap-2 py-3.5 rounded-xl border border-biteco-border bg-biteco-button hover:bg-[#4a4b4e] transition-colors">
                 <svg
                   width="20"
@@ -394,7 +421,9 @@ export default function Index() {
                     fill="#CACACA"
                   />
                 </svg>
-                <span className="text-biteco-text text-base leading-[135%]">Написать</span>
+                <span className="text-biteco-text text-base leading-[135%]">
+                  Написать
+                </span>
               </button>
             </div>
 
@@ -420,7 +449,7 @@ export default function Index() {
                     />
                   </svg>
                 </div>
-                
+
                 <div className="flex flex-col gap-2 flex-1">
                   <p className="text-biteco-text-muted text-xl font-medium leading-[135%]">
                     Mail
@@ -430,7 +459,7 @@ export default function Index() {
                   </p>
                 </div>
               </div>
-              
+
               <button className="flex items-center justify-center gap-2 py-3.5 rounded-xl border border-biteco-border bg-biteco-button hover:bg-[#4a4b4e] transition-colors">
                 <svg
                   width="20"
@@ -449,7 +478,9 @@ export default function Index() {
                     fill="#CACACA"
                   />
                 </svg>
-                <span className="text-biteco-text text-base leading-[135%]">Написать</span>
+                <span className="text-biteco-text text-base leading-[135%]">
+                  Написать
+                </span>
               </button>
             </div>
           </div>
