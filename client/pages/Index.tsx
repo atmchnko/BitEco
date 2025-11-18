@@ -19,7 +19,7 @@ export default function Index() {
     },
     {
       question: "Какую криптовалюту я получу после смешивания?",
-      answer: "Вы получаете чистую криптовалюту с различных источников, не связанных с вашей начальной транзакцией. Эти монеты ��езопасно отправлять на биржи и обменники без риска блокировки.",
+      answer: "Вы получаете чистую криптовалюту с различных источников, не связанных с вашей начальной транзакцией. Эти монеты ��езопасно отправля��ь на биржи и обменники без риска блокировки.",
     },
     {
       question: "Какие суммы вы принимаете на очистку?",
@@ -346,7 +346,7 @@ export default function Index() {
                   onClick={() => toggleFaq(index)}
                   className={`flex items-center justify-between gap-6 w-full px-8 py-2.5 transition-all duration-300 ${
                     openFaqIndex === index
-                      ? "bg-gradient-to-r from-[#7C3AED] to-[#A855F7] border-[#A855F7]"
+                      ? "bg-[#322441] border-[#9950D1]"
                       : "bg-biteco-card hover:bg-[#2e2f32]"
                   }`}
                 >
