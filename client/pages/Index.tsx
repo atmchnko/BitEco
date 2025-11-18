@@ -301,7 +301,7 @@ export default function Index() {
 
               <div className="relative z-10">
                 <h3 className="text-3xl font-medium leading-[135%] text-biteco-text mb-4">
-                  Обрыв цепочек
+                  Обр��в цепочек
                 </h3>
                 <p className="text-biteco-text-muted text-base font-medium leading-[135%]">
                   Полностью запутываем следы с нашей новой обновленной системой
@@ -344,7 +344,7 @@ export default function Index() {
               >
                 <button
                   onClick={() => toggleFaq(index)}
-                  className={`flex items-center justify-between gap-6 w-full px-8 py-2.5 transition-all duration-300 ${
+                  className={`flex items-center justify-between gap-6 w-full pl-8 pt-2 pb-2 pr-2 transition-all duration-300 ${
                     openFaqIndex === index
                       ? "bg-[#322441]"
                       : "bg-biteco-card hover:bg-[#2e2f32]"
