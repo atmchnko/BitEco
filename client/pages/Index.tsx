@@ -15,7 +15,7 @@ export default function Index() {
     },
     {
       question: "Для чего нужен крипто-миксер?",
-      answer: "Крипто-миксер позволяет повысить уровень конфиденциальности ваших транзакций. Он перемешивает ваши средства и возвращает чис��ые биткоины, не связанные с вашему адресу. Это помогает сохранить анонимность и защиту в цифровом веке.",
+      answer: "Крипто-миксер позволяет повысить уровень конфиденциальности ваших транзакций. Он перемешивает ваши средства и возвращает чис��ые биткоины, не связанные с вашему адресу. Это помогает сохранить анонимность �� защиту в цифровом веке.",
     },
     {
       question: "Какую криптовалюту я получу после смешивания?",
@@ -301,7 +301,7 @@ export default function Index() {
 
               <div className="relative z-10">
                 <h3 className="text-3xl font-medium leading-[135%] text-biteco-text mb-4">
-                  Обр��в цепочек
+                  Обрыв цепочек
                 </h3>
                 <p className="text-biteco-text-muted text-base font-medium leading-[135%]">
                   Полностью запутываем следы с нашей новой обновленной системой
@@ -358,7 +358,7 @@ export default function Index() {
                   </span>
 
                   <div
-                    className={`flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center transition-colors duration-300 mr-2.5 ${
+                    className={`flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center transition-colors duration-300 ${
                       openFaqIndex === index ? "bg-[#9950D1]" : "bg-[#3E3F42]"
                     }`}
                   >
