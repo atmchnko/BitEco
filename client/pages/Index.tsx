@@ -358,7 +358,7 @@ export default function Index() {
                   </span>
 
                   <div
-                    className={`flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center transition-colors duration-300 ${
+                    className={`flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center transition-colors duration-300 mr-2.5 ${
                       openFaqIndex === index ? "bg-[#9950D1]" : "bg-[#3E3F42]"
                     }`}
                   >
