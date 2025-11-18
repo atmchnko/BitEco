@@ -9,11 +9,26 @@ export default function Index() {
   };
 
   const faqItems = [
-    "Какую комиссию вы берете?",
-    "Для чего нужен крипто-миксер?",
-    "Какую криптовалюту я получу после смешивания?",
-    "Какие суммы вы принимаете на очистку?",
-    "Какую информацию вы храните?",
+    {
+      question: "Какую комиссию вы берете?",
+      answer: "Обычный План:\nДо 10 000 usdt - 4,5%\nДо 50 000 usdt - 4%\nОт 100 000 usdt - 3,5%\n\nБизнес план:\nДо 10 000 usdt - 4%\nДо 50 000 usdt - 3,5%\nОт 100 000 usdt - 3%",
+    },
+    {
+      question: "Для чего нужен крипто-миксер?",
+      answer: "Крипто-миксер позволяет повысить уровень конфиденциальности ваших транзакций. Он перемешивает ваши средства и возвращает чистые биткоины, не связанные с вашему адресу. Это помогает сохранить анонимность и защиту в цифровом веке.",
+    },
+    {
+      question: "Какую криптовалюту я получу после смешивания?",
+      answer: "Вы получаете чистую криптовалюту с различных источников, не связанных с вашей начальной транзакцией. Эти монеты ��езопасно отправлять на биржи и обменники без риска блокировки.",
+    },
+    {
+      question: "Какие суммы вы принимаете на очистку?",
+      answer: "Минимальная сумма для обработки составляет 500 USDT",
+    },
+    {
+      question: "Какую информацию вы храните?",
+      answer: "Мы не храним логи и не собираем данные пользователей. Проверки личности (KYC) и процедуры AML отсутствуют.",
+    },
   ];
 
   return (
@@ -317,37 +332,61 @@ export default function Index() {
 
           {/* FAQ Items */}
           <div className="flex flex-col gap-5 w-full mt-8">
-            {faqItems.map((question, index) => (
-              <button
+            {faqItems.map((item, index) => (
+              <div
                 key={index}
-                onClick={() => toggleFaq(index)}
-                className="flex items-center justify-between gap-6 px-8 py-2.5 rounded-[20px] border border-biteco-border bg-biteco-card hover:bg-[#2e2f32] transition-colors"
+                className="border border-biteco-border rounded-[20px] overflow-hidden bg-biteco-card transition-all duration-300"
               >
-                <span className="text-2xl font-medium leading-[135%] text-biteco-text text-left flex-1">
-                  {question}
-                </span>
+                <button
+                  onClick={() => toggleFaq(index)}
+                  className={`flex items-center justify-between gap-6 w-full px-8 py-2.5 transition-all duration-300 ${
+                    openFaqIndex === index
+                      ? "bg-gradient-to-r from-[#7C3AED] to-[#A855F7] border-[#A855F7]"
+                      : "bg-biteco-card hover:bg-[#2e2f32]"
+                  }`}
+                >
+                  <span className="text-2xl font-medium leading-[135%] text-biteco-text text-left flex-1">
+                    {item.question}
+                  </span>
 
-                <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-biteco-button flex items-center justify-center">
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    className="transition-transform duration-200"
-                    style={{
-                      transform:
-                        openFaqIndex === index
-                          ? "rotate(45deg)"
-                          : "rotate(0deg)",
-                    }}
-                  >
-                    <path
-                      d="M7.33594 15.25V0.75H8.58594V15.25H7.33594ZM0.75 8.58594V7.33594H15.25V8.58594H0.75Z"
-                      fill="#CACACA"
-                    />
-                  </svg>
+                  <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-r from-[#A855F7] to-[#D946EF] flex items-center justify-center">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      className="transition-transform duration-300"
+                      style={{
+                        transform:
+                          openFaqIndex === index
+                            ? "rotate(45deg)"
+                            : "rotate(0deg)",
+                      }}
+                    >
+                      <path
+                        d="M7.33594 15.25V0.75H8.58594V15.25H7.33594ZM0.75 8.58594V7.33594H15.25V8.58594H0.75Z"
+                        fill="#FFFFFF"
+                      />
+                    </svg>
+                  </div>
+                </button>
+
+                {/* Answer Section */}
+                <div
+                  className="overflow-hidden transition-all duration-300"
+                  style={{
+                    maxHeight:
+                      openFaqIndex === index ? "500px" : "0px",
+                    opacity: openFaqIndex === index ? 1 : 0,
+                  }}
+                >
+                  <div className="px-8 py-6 bg-biteco-bg border-t border-biteco-border">
+                    <p className="text-base font-medium leading-[135%] text-biteco-text-muted whitespace-pre-line">
+                      {item.answer}
+                    </p>
+                  </div>
                 </div>
-              </button>
+              </div>
             ))}
           </div>
         </div>
