@@ -15,7 +15,7 @@ export default function Index() {
     },
     {
       question: "Для чего нужен крипто-миксер?",
-      answer: "Крипто-миксер позволяет повысить уровень конфиденциальности ваших транзакций. Он перемешивает ваши средства и возвращает чис��ые биткоины, не связанные с вашему адресу. Это помогает сохранить анонимность �� защиту в цифровом веке.",
+      answer: "Крипто-миксер по��воляет повысить уровень конфиденциальности ваших транзакций. Он перемешивает ваши средства и возвращает чис��ые биткоины, не связанные с вашему адресу. Это помогает сохранить анонимность и защиту в цифровом веке.",
     },
     {
       question: "Какую криптовалюту я получу после смешивания?",
@@ -27,7 +27,7 @@ export default function Index() {
     },
     {
       question: "Какую информацию вы храните?",
-      answer: "Мы не храним логи и не собираем данные пользователей. Проверки личности (KYC) и процедуры AML отсутствуют.",
+      answer: "Мы не храним логи и не собираем данные пользователей. Проверки личности (KYC) и про��едуры AML отсутствуют.",
     },
   ];
 
@@ -252,7 +252,7 @@ export default function Index() {
 
             <div className="flex flex-col items-center gap-4 w-full">
               <h2 className="text-5xl sm:text-6xl lg:text-[70px] font-medium leading-[100%] text-biteco-text text-center">
-                Немного о нас
+                ��емного о нас
               </h2>
               <p className="text-biteco-text-muted text-base font-medium leading-[135%] text-center">
                 Мы используем самые сов��еменные технологии и методы для
@@ -344,7 +344,7 @@ export default function Index() {
               >
                 <button
                   onClick={() => toggleFaq(index)}
-                  className={`flex items-center justify-between gap-6 w-full pl-8 pt-2 pb-2 pr-2 transition-all duration-300 ${
+                  className={`flex items-center justify-between gap-6 w-full pl-8 pt-2.5 pb-2.5 pr-2.5 transition-all duration-300 ${
                     openFaqIndex === index
                       ? "bg-[#322441]"
                       : "bg-biteco-card hover:bg-[#2e2f32]"
