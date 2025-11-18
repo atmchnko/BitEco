@@ -15,7 +15,7 @@ export default function Index() {
     },
     {
       question: "Для чего нужен крипто-миксер?",
-      answer: "Крипто-миксер позволяет повысить уровень конфиденциальности ваших транзакций. Он перемешивает ваши средства и возвращает чистые биткоины, не связанные с вашему адресу. Это помогает сохранить анонимность и защиту в цифровом веке.",
+      answer: "Крипто-миксер позволяет повысить уровень конфиденциальности ваших транзакций. Он перемешивает ваши средства и возвращает чис��ые биткоины, не связанные с вашему адресу. Это помогает сохранить анонимность и защиту в цифровом веке.",
     },
     {
       question: "Какую криптовалюту я получу после смешивания?",
@@ -255,7 +255,7 @@ export default function Index() {
                 Немного о нас
               </h2>
               <p className="text-biteco-text-muted text-base font-medium leading-[135%] text-center">
-                Мы используем самые современные технологии и методы для
+                Мы используем самые сов��еменные технологии и методы для
                 обеспечения максимальной безопасности и скорости наших услуг
               </p>
             </div>
@@ -349,7 +349,11 @@ export default function Index() {
                     {item.question}
                   </span>
 
-                  <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-r from-[#A855F7] to-[#D946EF] flex items-center justify-center">
+                  <div
+                    className={`flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center transition-colors duration-300 ${
+                      openFaqIndex === index ? "bg-[#9950D1]" : "bg-[#3E3F42]"
+                    }`}
+                  >
                     <svg
                       width="16"
                       height="16"
