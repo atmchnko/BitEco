@@ -335,7 +335,12 @@ export default function Index() {
             {faqItems.map((item, index) => (
               <div
                 key={index}
-                className="border border-biteco-border rounded-[20px] overflow-hidden bg-biteco-card transition-all duration-300"
+                className="rounded-[20px] overflow-hidden bg-biteco-card transition-all duration-300"
+                style={{
+                  border: `1px solid ${
+                    openFaqIndex === index ? "#9950D1" : "#464749"
+                  }`,
+                }}
               >
                 <button
                   onClick={() => toggleFaq(index)}
