@@ -15,7 +15,7 @@ export default function Index() {
     },
     {
       question: "Для чего нужен крипто-миксер?",
-      answer: "Кри��то-миксер позволяет повысить уровень конфиденциальности ваших транзакций. Он принимает ваши монеты, перемешивает их с другими средствами и возвращает чистые биткоины, н�� привязанные к вашему адресу. Это помогает сохранить анонимность и защитить личные данные.",
+      answer: "Кри��то-миксер позволяет повысить ур��вень конфиденциальности ваших транзакций. Он принимает ваши монеты, перемешивает их с другими средствами и возвращает чистые биткоины, не привязанные к вашему адресу. Это помогает сохранить анонимность и защитить личные данные.",
     },
     {
       question: "Какую криптовалюту я получу после смешивания?",
@@ -27,7 +27,7 @@ export default function Index() {
     },
     {
       question: "Какую информацию вы храните?",
-      answer: "Мы не храним логи и не собираем данные пользователей. Проверки личности (KYC) и процедуры AML отсутствуют.",
+      answer: "Мы не храним логи и не собираем данные пользователей. Проверки личност�� (KYC) и процедуры AML отсутствуют.",
     },
   ];
 
@@ -130,7 +130,7 @@ export default function Index() {
           {/* Announcement Banner */}
           <div className="w-full p-5 rounded-2xl border border-biteco-border-light bg-[rgba(18,19,23,0.50)] backdrop-blur-sm">
             <p className="text-biteco-text text-center text-2xl sm:text-3xl font-medium leading-[135%]">
-              Чис��ка ведеться в ручном режиме. Обращайтесь по контактам.
+              Чистка ведеться в ручном режиме. Обращайтесь по контактам.
               Минимальная сумма ручной чистки - 500 USDT
             </p>
           </div>
@@ -246,7 +246,7 @@ export default function Index() {
         <div className="flex flex-col items-center gap-8">
           {/* Section Header */}
           <div className="flex flex-col items-center gap-5 max-w-[534px]">
-            <span className="inline-flex px-3.5 py-2.5 rounded-3xl border border-[rgba(255,255,255,0.16)] bg-gradient-to-r from-[rgba(41,42,44,0.56)] to-[rgba(85,87,91,0.77)] text-biteco-text text-base font-medium">
+            <span className="inline-flex px-3.5 py-2.5 rounded-3xl border border-[rgba(255,255,255,0.16)] bg-gradient-to-r from-[rgba(41,42,44,0.28)] to-[rgba(85,87,91,0.38)] text-biteco-text text-base font-medium">
               О нас
             </span>
 
@@ -321,7 +321,7 @@ export default function Index() {
         <div className="flex flex-col items-center gap-8">
           {/* Section Header */}
           <div className="flex flex-col items-center gap-5 max-w-[690px]">
-            <span className="inline-flex px-3.5 py-2.5 rounded-3xl border border-[rgba(255,255,255,0.16)] bg-gradient-to-r from-[rgba(41,42,44,0.56)] to-[rgba(85,87,91,0.77)] text-biteco-text text-base font-medium">
+            <span className="inline-flex px-3.5 py-2.5 rounded-3xl border border-[rgba(255,255,255,0.16)] bg-gradient-to-r from-[rgba(41,42,44,0.28)] to-[rgba(85,87,91,0.38)] text-biteco-text text-base font-medium">
               FAQ
             </span>
 
@@ -412,7 +412,7 @@ export default function Index() {
         <div className="flex flex-col items-center gap-8">
           {/* Section Header */}
           <div className="flex flex-col items-center gap-5 max-w-[534px]">
-            <span className="inline-flex px-3.5 py-2.5 rounded-3xl border border-[rgba(255,255,255,0.16)] bg-gradient-to-r from-[rgba(41,42,44,0.56)] to-[rgba(85,87,91,0.77)] text-biteco-text text-base font-medium">
+            <span className="inline-flex px-3.5 py-2.5 rounded-3xl border border-[rgba(255,255,255,0.16)] bg-gradient-to-r from-[rgba(41,42,44,0.28)] to-[rgba(85,87,91,0.38)] text-biteco-text text-base font-medium">
               Контакты
             </span>
 
