@@ -15,7 +15,7 @@ export default function Index() {
     },
     {
       question: "Для чего нужен крипто-миксер?",
-      answer: "Кри��то-миксер позволяет повысить уровень конфиденциальности ваших транзакций. Он принимает ваши монеты, перемешивает их с другими средствами и возвращает чистые биткоины, не привязанные к вашему адресу. Это помогает сохранить анонимность и защитить личные данные.",
+      answer: "Кри��то-миксер позволяет повысить уровень конфиденциальности ваших транзакций. Он принимает ваши монеты, перемешивает их с другими средства��и и возвращает чистые биткоины, не привязанные к вашему адресу. Это помогает сохранить анонимность и защитить личные данные.",
     },
     {
       question: "Какую криптовалюту я получу после смешивания?",
@@ -34,7 +34,7 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-biteco-bg text-biteco-text">
       {/* Background Grid */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none">
+      <div className="fixed top-0 left-0 right-0 h-[933px] overflow-hidden pointer-events-none">
         <div className="absolute inset-0 opacity-20">
           <svg
             className="w-full h-[933px]"
