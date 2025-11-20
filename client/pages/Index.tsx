@@ -22,7 +22,7 @@ export default function Index() {
     {
       question: "Какую криптовалюту я получу после смешивания?",
       answer:
-        "Вы получаете чистую криптовалюту с различных источников, не связанных с вашей начальной транзакцией. Эти монеты безопасно отправлять на биржи и обменники без риска блокировки.",
+        "Вы получаете чистую криптовалюту с различных источников, не связа��ных с вашей начальной транзакцией. Эти монеты безопасно отправлять на биржи и обменники без риска блокировки.",
     },
     {
       question: "Какие суммы вы принимаете на очистку?",
@@ -139,7 +139,7 @@ export default function Index() {
           {/* Announcement Banner */}
           <div className="w-full p-5 rounded-2xl border border-biteco-border-light bg-[rgba(18,19,23,0.50)] backdrop-blur-sm">
             <p className="text-biteco-text text-center text-2xl sm:text-3xl font-medium leading-[135%]">
-              Чистка ведеться в ручном режиме. Обращайтесь по контактам.
+              Чистка ведеться в ручном режиме. Обращайтесь по контакт��м.
               Минимальная сумма ручной чистки - 500 USDT
             </p>
           </div>
@@ -458,7 +458,7 @@ export default function Index() {
                     Telegram support
                   </p>
                   <p className="text-biteco-text text-2xl font-medium leading-[135%]">
-                    @BitEco_Support
+                    @YAP66666
                   </p>
                 </div>
               </div>
