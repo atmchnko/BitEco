@@ -15,7 +15,7 @@ export default function Index() {
     },
     {
       question: "Для чего нужен крипто-миксер?",
-      answer: "Кри��то-миксер позволяет повысить уровень конфиденциальности ваших транзакций. Он принимает ваши монеты, перемешивает их с другими средствами и возвращает чистые биткоины, не привязанные к вашему адресу. Это помогает сохранить анонимность и защитить личные данные.",
+      answer: "Кри��то-миксер позволяет повысить уровень конфиденциальности ваших транзакций. Он принимает ваши монеты, перемешивает их с другими средствами и возвращает чистые биткоины, н�� привязанные к вашему адресу. Это помогает сохранить анонимность и защитить личные данные.",
     },
     {
       question: "Какую криптовалюту я получу после смешивания?",
@@ -32,7 +32,7 @@ export default function Index() {
   ];
 
   return (
-    <div className="min-h-screen bg-biteco-bg text-biteco-text">
+    <div className="relative bg-biteco-bg text-biteco-text">
       {/* Background Grid */}
       <div className="absolute top-0 left-0 right-0 h-[933px] overflow-hidden pointer-events-none">
         <div className="absolute inset-0 opacity-20">
@@ -130,7 +130,7 @@ export default function Index() {
           {/* Announcement Banner */}
           <div className="w-full p-5 rounded-2xl border border-biteco-border-light bg-[rgba(18,19,23,0.50)] backdrop-blur-sm">
             <p className="text-biteco-text text-center text-2xl sm:text-3xl font-medium leading-[135%]">
-              Чистка ведеться в ручном режиме. Обращайтесь по контактам.
+              Чис��ка ведеться в ручном режиме. Обращайтесь по контактам.
               Минимальная сумма ручной чистки - 500 USDT
             </p>
           </div>
@@ -255,7 +255,7 @@ export default function Index() {
                 Немного о нас
               </h2>
               <p className="text-biteco-text-muted text-base font-medium leading-[135%] text-center">
-                Мы использу��м самые современные технологии и методы для
+                Мы используем самые современные технологии и методы для
                 обеспечения максимальной безопасности и скорости наших услуг
               </p>
             </div>
