@@ -17,12 +17,12 @@ export default function Index() {
     {
       question: "Для чего нужен крипто-миксер?",
       answer:
-        "Кри��то-миксер позволяет повысить уровень конфиденциальности ваших транзакций. Он принимает ваши монеты, перемешивает их с другими средствами и возвращает чистые биткоины, не привязанные к вашему адресу. Это помогает сохранить анонимность и защитить личные данные.",
+        "Крипто-миксер позволяет повысить уровень конфиденциальности ваших транзакций. Он принимает ваши монеты, перемешивает их с другими средствами и возвращает чистые биткоины, не привязанные к вашему адресу. Это помогает сохранить анонимность и защитить личные данные.",
     },
     {
       question: "Какую криптовалюту я получу после смешивания?",
       answer:
-        "Вы получаете чистую криптовалюту с различных источников, не связа��ных с вашей начальной транзакцией. Эти монеты безопасно отправлять на биржи и обменники без риска блокировки.",
+        "Вы получаете чистую криптовалюту с различных источников, не связанных с вашей начальной транзакцией. Эти монеты безопасно отправлять на биржи и обменники без риска блокировки.",
     },
     {
       question: "Какие суммы вы принимаете на очистку?",
@@ -91,7 +91,7 @@ export default function Index() {
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
           <Link to="/">
             <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/d4897c6e5a648f4e45e5e50fcddfc2b5011d3314?width=366"
+              src="../../logo.svg"
               alt="BitEco"
               className="h-[46px] w-auto"
             />
@@ -139,7 +139,7 @@ export default function Index() {
           {/* Announcement Banner */}
           <div className="w-full p-5 rounded-2xl border border-biteco-border-light bg-[rgba(18,19,23,0.50)] backdrop-blur-sm">
             <p className="text-biteco-text text-center text-2xl sm:text-3xl font-medium leading-[135%]">
-              Чистка ведеться в ручном режиме. Обращайтесь по контакт��м.
+              Чистка ведется в ручном режиме. Обращайтесь по контактам.
               Минимальная сумма ручной чистки - 500 USDT
             </p>
           </div>
@@ -147,7 +147,7 @@ export default function Index() {
           {/* Main Title */}
           <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 lg:gap-7">
             <h1 className="text-5xl sm:text-6xl lg:text-[70px] font-medium leading-[100%] text-biteco-text">
-              Крипто Миксер
+              Крипто-миксер
             </h1>
 
             <div className="relative w-[100px] h-[100px] flex-shrink-0">
@@ -463,7 +463,13 @@ export default function Index() {
                 </div>
               </div>
 
-              <button className="flex items-center justify-center gap-2 py-3.5 rounded-xl border border-biteco-border bg-biteco-button hover:bg-[#4a4b4e] transition-colors">
+              <button
+                className="flex items-center justify-center gap-2 py-3.5 rounded-xl border border-biteco-border bg-biteco-button hover:bg-[#4a4b4e] transition-colors"
+                onClick={() => {
+                  window.location.href =
+                    'https://t.me/YAP66666';
+                }}
+              >
                 <svg
                   width="20"
                   height="20"
@@ -520,7 +526,13 @@ export default function Index() {
                 </div>
               </div>
 
-              <button className="flex items-center justify-center gap-2 py-3.5 rounded-xl border border-biteco-border bg-biteco-button hover:bg-[#4a4b4e] transition-colors">
+              <button
+                className="flex items-center justify-center gap-2 py-3.5 rounded-xl border border-biteco-border bg-biteco-button hover:bg-[#4a4b4e] transition-colors"
+                onClick={() => {
+                  window.location.href =
+                    'mailto:support@bit-eco.com?subject=Вопрос%20по%20крипто-миксеру';
+                }}
+              >
                 <svg
                   width="20"
                   height="20"
